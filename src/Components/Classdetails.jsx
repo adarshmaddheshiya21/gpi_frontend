@@ -8,7 +8,7 @@ function Classdetails() {
   }, []);
 
   const fetchData = () => {
-    fetch("http://localhost:4000/getClassData")
+    fetch("https://gpi-attendencesc.onrender.com/getClassData")
       .then((res) => {
         if (!res.ok) throw new Error("Network response was not ok");
         return res.json();
