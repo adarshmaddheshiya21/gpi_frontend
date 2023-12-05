@@ -15,7 +15,7 @@ function HomePage() {
             Ease
           </p>
           <p className="text-gray-400 text-center mt-4 text-md md:text-xl max-w-2xl font-medium">
-            Let's Make Attendance System smart and convenient with the help of a GPS based Attendance Management System
+            Let us Make Attendance System smart and convenient with the help of a GPS based Attendance Management System
           </p>
           <div className="flex items-center space-x-2">
             <Link
