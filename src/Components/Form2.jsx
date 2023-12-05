@@ -31,7 +31,7 @@ function Form2() {
   }, []);
 
   const submitHandle= () => {
-    fetch(`http://localhost:4000/student-form/:adminId`, {
+    fetch(`https://gpi-attendencesc.onrender.com/student-form/:adminId`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -55,7 +55,7 @@ function Form2() {
 
     if (studentData.name && studentData.rollno && studentData.studentid) {
       const yamlData = yaml.dump(studentData);
-      fetch(`http://localhost:4000/student-data/${urls[2]}/${urls[3]}`, {
+      fetch(`https://gpi-attendencesc.onrender.com/student-data/${urls[2]}/${urls[3]}`, {
         method: "POST",
         headers: {
           "Content-type": "application/x-yaml",
