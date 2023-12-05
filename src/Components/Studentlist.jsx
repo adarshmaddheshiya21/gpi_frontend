@@ -10,7 +10,7 @@ function Studentlist() {
   }, []);
 
   const fetchData = () => {
-    fetch("http://localhost:4000/getStudentData")
+    fetch("https://gpi-attendencesc.onrender.com/getStudentData")
       .then((res) => {
         if (!res.ok) throw new Error("Network response was not ok");
         return res.json();
