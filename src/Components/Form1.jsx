@@ -38,7 +38,7 @@ function Form1() {
   function toStudentForm(e) {
     e.preventDefault();
 
-    fetch(`http://localhost:4000/generate-link/${classData.admin_id}`)
+    fetch(`https://gpi-attendencesc.onrender.com/generate-link/${classData.admin_id}`)
       .then((response) => response.json())
       .then((data) => {
         navigator.clipboard
@@ -76,7 +76,7 @@ function Form1() {
         body: JSON.stringify(classData), // Convert data to JSON format
       };
   
-      fetch("http://localhost:4000/class-data", requestOptions)
+      fetch("https://gpi-attendencesc.onrender.com/class-data", requestOptions)
         .then((res) => res.text())
         .then((result) => {
           console.log(result);
